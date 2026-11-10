@@ -6,3 +6,6 @@
 .honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 
 .mini-project .identity-media{object-fit:contain;background:#1a4b3f}
+
+/* Keep the complete HereFor illustration visible at every screen size. */
+.phone>.media{object-fit:contain;background:#050505}
