@@ -4,3 +4,5 @@ outputs/
 .env*
 .dev.vars*
 __pycache__/
+node_modules/
+build/

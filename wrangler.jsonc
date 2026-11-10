@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "pltv-ink-journal",
+  "main": "worker/cloudflare.js",
+  "compatibility_date": "2025-11-01",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{ "pattern": "pltv.ink", "custom_domain": true }],
+  "assets": {
+    "directory": "./build/cloudflare",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "r2_buckets": [{ "binding": "BUCKET", "bucket_name": "pltv-ink-letters" }]
+}

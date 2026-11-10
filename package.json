@@ -1,1 +1,16 @@
-{"name":"pltv-journal","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","test":"node --test worker/api.test.js"}}
+{
+  "name": "pltv-journal",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test worker/*.test.js",
+    "build:cloudflare": "python3 build.py && node scripts/build-cloudflare.mjs",
+    "deploy": "npm run build:cloudflare && node scripts/wrangler.mjs deploy",
+    "deploy:check": "npm run build:cloudflare && node scripts/wrangler.mjs deploy --dry-run",
+    "wrangler": "node scripts/wrangler.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.159.0"
+  }
+}
