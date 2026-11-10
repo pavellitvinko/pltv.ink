@@ -2,7 +2,7 @@ import {readFile,writeFile,mkdir,readdir} from 'node:fs/promises';
 import path from 'node:path';
 const base=path.resolve(import.meta.dirname,'..');
 const files={};
-const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.jpg':'image/jpeg','.vcf':'text/vcard; charset=utf-8'};
+const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.jpg':'image/jpeg','.png':'image/png','.vcf':'text/vcard; charset=utf-8'};
 async function walk(dir){for(const file of await readdir(dir,{withFileTypes:true})){if(file.name==='server'||file.name==='.openai')continue;const full=path.join(dir,file.name);if(file.isDirectory())await walk(full);else{const key='/'+path.relative(path.join(base,'dist'),full);files[key]=[types[path.extname(file.name)]||'application/octet-stream',(await readFile(full)).toString('base64')];}}}
 await walk(path.join(base,'dist'));
 let api=await readFile(path.join(base,'worker/api.js'),'utf8');api=api.replace('export async function api','async function api');

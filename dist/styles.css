@@ -4,3 +4,5 @@
 @media(max-width:370px){.cover h1{font-size:52px}.mobile-masthead .brand{font-size:52px}.cover-copy{bottom:24px}.cover-actions .cta,.outline-cta{font-size:14px}.social{padding:10px 12px;gap:8px}.fact strong{font-size:26px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 .honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+
+.mini-project .identity-media{object-fit:contain;background:#1a4b3f}
