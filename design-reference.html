@@ -43,8 +43,6 @@ input,textarea{font:inherit}
 <!-- TOP BAR -->
 <header style="display: flex; align-items: center; justify-content: space-between; height: 84px; padding: 0 48px">
 <div style="display: flex; align-items: center; gap: 14px">
-<span class="tag">N°01 · Winter 2026</span>
-<span class="meta" style="color: #151413">The journal of Pavel Litvinko</span>
 </div>
 <nav aria-label="Chapters" style="display: flex; gap: 6px">
 <sc-for list="{{toc}}" as="c" hint-placeholder-count="5"><a class="chip" href="{{c.href}}"><b>{{c.no}}</b>{{c.short}}</a></sc-for>
@@ -100,7 +98,7 @@ input,textarea{font:inherit}
 <a class="cta" href="#" style="margin-top: 8px">Open website <span class="dot" aria-hidden="true">→</span></a>
 </div>
 <div style="grid-column: 7 / span 6; position: relative">
-<img class="media" src="./assets/26421836c05dd8792bc057dd2918eb44.jpg" alt="Illustrated yellow train in a green landscape" style="height: 520px">
+<img class="media" src="./assets/rw-pass-bot-6e3fda807138.png" alt="RW Pass Bot: passenger train in a green landscape with Telegram and notification icons" style="height: 520px">
 <div style="position: absolute; left: -32px; bottom: 32px; padding: 22px 26px; background: #151413; color: #F4F1EA; border-radius: 24px; display: flex; flex-direction: column; gap: 6px; max-width: 300px">
 <span style="font-family: Unbounded, sans-serif; font-weight: 900; font-size: 52px; letter-spacing: -0.05em; line-height: 1">2,300+</span>
 <span style="font-size: 14px; color: #BDB8AE">monthly users · the largest ticket-tracking bot in Belarus</span>
@@ -110,7 +108,7 @@ input,textarea{font:inherit}
 
 <!-- 02 -->
 <article id="ch2" style="margin: 88px 16px 0; border-radius: 36px; background: #151413; color: #F4F1EA; padding: 56px 48px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: center">
-<img class="media" src="./assets/2db78d4aaef8df9e4ece5d7a7345921f.jpg" alt="HereFor on iPhone: a 5-minute visit timer" style="grid-column: 1 / span 6; height: 600px">
+<img class="media" src="./assets/herefor-59800fe78187.jpg" alt="HereFor: five-minute timer beside a person using a phone in a yellow armchair" style="grid-column: 1 / span 6; height: 600px">
 <div style="grid-column: 8 / span 5">
 <p class="meta" style="margin: 0 0 14px; color: #A9A59C"><span style="color: #E8892A">02</span> / 05 · HereFor</p>
 <h2 class="hl" style="font-size: 64px"><i>Your phone is designed to keep you in.&nbsp;</i>This app heps you leave.&nbsp;</h2>
@@ -118,7 +116,7 @@ input,textarea{font:inherit}
 <blockquote style="margin: 28px 0 30px; padding: 0 0 0 20px; border-left: 3px solid #E8892A">
 <p style="margin: 0; font-family: Newsreader, serif; font-style: italic; font-size: 40px; line-height: 1.12">“A two-minute reply shouldn't turn into twenty minutes of scrolling.”</p>
 </blockquote>
-<a class="cta lt" href="#">Explore HereFor <span class="dot" aria-hidden="true">→</span></a>
+<a class="cta lt" href="https://herefor.pltv.ink">Explore HereFor <span class="dot" aria-hidden="true">→</span></a>
 </div>
 </article>
 
@@ -127,9 +125,9 @@ input,textarea{font:inherit}
 <article id="ch3" style="display: flex; flex-direction: column; gap: 18px">
 <img class="media" src="./assets/00e6e28b4c17fa15a018ed7306e9049d.jpg" alt="Такая Беларусь — red national brand concept" style="height: 340px">
 <p class="meta" style="margin: 8px 0 0"><span style="color: #B8601A">03</span> / 05 · Identity</p>
-<h2 class="hl" style="font-size: 56px"><i>A Nation's </i>Identity<i>.</i></h2>
-<p class="p" style="max-width: 560px">Такая Беларусь — a national brand concept: open, creative and close. Part of a longer study of Belarusian geometric signs.</p>
-<a class="cta" href="#" style="align-self: flex-start">See the studies <span class="dot" aria-hidden="true">→</span></a>
+<h2 class="hl" style="font-size: 56px"><i>Tourism Brand </i>Identity Concept</h2>
+<p class="p" style="max-width: 560px">A tourism branding concept for Belarus, bringing together national symbolism, expressive typography, and an invitation to discover the country.</p>
+
 </article>
 <article id="ch4" style="display: flex; flex-direction: column; gap: 18px">
 <div style="position: relative">
@@ -162,11 +160,11 @@ input,textarea{font:inherit}
 <section id="index" style="padding: 88px 64px 24px">
 <div style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 22px">
 <div><p class="meta" style="margin: 0 0 12px">Index</p><h2 class="hl" style="font-size: 56px">More <i>projects.</i></h2></div>
-<span class="meta">08 projects</span>
+
 </div>
 <ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px">
 <sc-for list="{{index}}" as="x" hint-placeholder-count="8">
-<li><a class="tile" href="#"><span style="font-size: 18px; font-weight: 700">{{x.title}}</span><span class="tag soft">{{x.kind}}</span></a></li>
+<li><div class="tile"><span style="font-size: 18px; font-weight: 700">{{x.title}}</span><span class="tag soft">{{x.kind}}</span></div></li>
 </sc-for>
 </ul>
 </section>
@@ -182,7 +180,7 @@ input,textarea{font:inherit}
 <span aria-hidden="true" style="font-size: 24px">↓</span>
 </a>
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; max-width: 440px">
-<a href="#" style="display: flex; align-items: center; gap: 14px; min-height: 66px; padding: 0 18px; border-radius: 18px; background: #1F1D1B; text-decoration: none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"></path></svg><span style="display: flex; flex-direction: column; gap: 2px; min-width: 0"><span style="font-size: 16px; font-weight: 700">Telegram</span><span style="font-size: 12px; color: #BDB8AE">[@handle]</span></span></a>
+<a href="https://t.me/pavellitvinko" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 14px; min-height: 66px; padding: 0 18px; border-radius: 18px; background: #1F1D1B; text-decoration: none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"></path></svg><span style="display: flex; flex-direction: column; gap: 2px; min-width: 0"><span style="font-size: 16px; font-weight: 700">Telegram</span><span style="font-size: 12px; color: #BDB8AE">@pavellitvinko</span></span></a>
 <a href="#" style="display: flex; align-items: center; gap: 14px; min-height: 66px; padding: 0 18px; border-radius: 18px; background: #1F1D1B; text-decoration: none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 11v5"></path><path d="M8 8v.01"></path><path d="M12 16v-5"></path><path d="M16 16v-3a2 2 0 1 0 -4 0"></path><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"></path></svg><span style="display: flex; flex-direction: column; gap: 2px; min-width: 0"><span style="font-size: 16px; font-weight: 700">LinkedIn</span><span style="font-size: 12px; color: #BDB8AE">[/in/handle]</span></span></a>
 <a href="#" style="display: flex; align-items: center; gap: 14px; min-height: 66px; padding: 0 18px; border-radius: 18px; background: #1F1D1B; text-decoration: none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"></path><path d="M8.5 12a3.5 3.5 0 1 0 7 0a3.5 3.5 0 0 0 -7 0"></path><path d="M17 7v.01"></path></svg><span style="display: flex; flex-direction: column; gap: 2px; min-width: 0"><span style="font-size: 16px; font-weight: 700">Instagram</span><span style="font-size: 12px; color: #BDB8AE">[@handle]</span></span></a>
 <a href="#" style="display: flex; align-items: center; gap: 14px; min-height: 66px; padding: 0 18px; border-radius: 18px; background: #1F1D1B; text-decoration: none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"></path><path d="M3 7l9 6l9 -6"></path></svg><span style="display: flex; flex-direction: column; gap: 2px; min-width: 0"><span style="font-size: 16px; font-weight: 700">Email</span><span style="font-size: 12px; color: #BDB8AE">[hello@pltv.ink]</span></span></a>
@@ -195,8 +193,8 @@ input,textarea{font:inherit}
 <button type="button" style="all: unset; cursor: pointer; display: flex; align-items: center; justify-content: space-between; min-height: 58px; padding: 0 8px 0 24px; border-radius: 999px; background: #F4F1EA; color: #151413; font-size: 17px; font-weight: 600">Send the letter <span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 50%; background: #151413; color: #F4F1EA">→</span></button>
 </form>
 <footer style="grid-column: 1 / span 12; margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(244,241,234,0.2); display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: #BDB8AE">
-<span style="display: flex; align-items: center; gap: 4px; font-family: Unbounded, sans-serif; font-weight: 900; font-size: 19px; letter-spacing: -0.03em; color: #F4F1EA">pltv<svg width="12" height="12" viewBox="-50 -50 100 100" aria-hidden="true"><path fill="#E8892A" d="M0,-50 C6,-12 12,-6 50,0 C12,6 6,12 0,50 C-6,12 -12,6 -50,0 C-12,-6 -6,-12 0,-50 Z"></path></svg>ink — N°01</span>
-<span>Set in Inter Tight, Newsreader and Unbounded · © 2026 Pavel Litvinko</span>
+<span style="display: flex; align-items: center; gap: 4px; font-family: Unbounded, sans-serif; font-weight: 900; font-size: 19px; letter-spacing: -0.03em; color: #F4F1EA">pltv<svg width="12" height="12" viewBox="-50 -50 100 100" aria-hidden="true"><path fill="#E8892A" d="M0,-50 C6,-12 12,-6 50,0 C12,6 6,12 0,50 C-6,12 -12,6 -50,0 C-12,-6 -6,-12 0,-50 Z"></path></svg>ink</span>
+<span>© 2026 Pavel Litvinko</span>
 </footer>
 </section>
 </div>
@@ -229,7 +227,7 @@ class Component extends DCLogic {
         { title: '[Sauna project]', kind: 'Sauna' }
       ],
       socials: [
-        { name: 'Telegram', handle: '[@handle]' },
+        { name: 'Telegram', handle: '@pavellitvinko' },
         { name: 'LinkedIn', handle: '[/in/handle]' },
         { name: 'Instagram', handle: '[@handle]' },
         { name: 'Email', handle: '[hello@pltv.ink]' }

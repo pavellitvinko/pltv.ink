@@ -5,7 +5,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "test": "node --test worker/*.test.js",
-    "build:cloudflare": "python3 build.py && node scripts/build-cloudflare.mjs",
+    "build:cloudflare": "node scripts/build-cloudflare.mjs",
     "deploy": "npm run build:cloudflare && node scripts/wrangler.mjs deploy",
     "deploy:check": "npm run build:cloudflare && node scripts/wrangler.mjs deploy --dry-run",
     "wrangler": "node scripts/wrangler.mjs"
