@@ -9,3 +9,5 @@
 
 /* Keep the complete HereFor illustration visible at every screen size. */
 .phone>.media{object-fit:contain;background:#050505}
+
+.desktop-header,.mobile-issue{justify-content:flex-end}
