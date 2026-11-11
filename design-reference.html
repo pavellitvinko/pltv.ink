@@ -164,7 +164,7 @@ input,textarea{font:inherit}
 </div>
 <ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px">
 <sc-for list="{{index}}" as="x" hint-placeholder-count="8">
-<li><a class="tile" href="#"><span style="font-size: 18px; font-weight: 700">{{x.title}}</span><span class="tag soft">{{x.kind}}</span></a></li>
+<li><div class="tile"><span style="font-size: 18px; font-weight: 700">{{x.title}}</span><span class="tag soft">{{x.kind}}</span></div></li>
 </sc-for>
 </ul>
 </section>
