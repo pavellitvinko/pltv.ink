@@ -11,3 +11,5 @@
 .phone>.media{object-fit:contain;background:#050505}
 
 .desktop-header,.mobile-issue{justify-content:flex-end}
+
+.train-visual img{height:auto}
