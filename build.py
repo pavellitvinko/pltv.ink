@@ -20,7 +20,7 @@ projects=[('The Board','Product'),('Language tools','Product'),('Coffee app','Pr
 nav=''.join(f'<a class="chip" href="#ch{i}"><b>0{i}</b>{name}</a>' for i,name in enumerate(['Trains','Phones','Signs','Currency','Field notes'],1))
 icons={'Telegram':'<path d="M15 10l-4 4 6 6 4-16-18 7 4 2 2 6 3-4"/>','LinkedIn':'<rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 11v5m0-8v.01M12 16v-5m4 5v-3a2 2 0 0 0-4 0"/>','Instagram':'<rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="3.5"/><path d="M17 7v.01"/>','Threads':'<path d="M19 7.5C16 1 4 1 4 12s15 12 15 4c0-6-10-6-10-2s7 3 6-3c-.5-4-5-5-6-2"/>'}
 def socials():
- links={'Instagram':('https://www.instagram.com/pavel.litvinko/','@pavel.litvinko'),'LinkedIn':('https://www.linkedin.com/in/pavellitvinko/','/in/pavellitvinko'),'Threads':('https://www.threads.com/@pavel.litvinko','@pavel.litvinko')}
+ links={'Telegram':('https://t.me/pavellitvinko','@pavellitvinko'),'Instagram':('https://www.instagram.com/pavel.litvinko/','@pavel.litvinko'),'LinkedIn':('https://www.linkedin.com/in/pavellitvinko/','/in/pavellitvinko'),'Threads':('https://www.threads.com/@pavel.litvinko','@pavel.litvinko')}
  out=[]
  for name in ['Telegram','LinkedIn','Instagram','Threads']:
   icon=icons.get(name,'<path d="M19 7.5C16 1 4 1 4 12s15 12 15 4c0-6-10-6-10-2s7 3 6-3c-.5-4-5-5-6-2"/>')
